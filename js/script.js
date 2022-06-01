@@ -6,29 +6,6 @@ window.onload = function () {
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
 	document.body.style.overflow = 'auto';
-	videoCheck();
-	f1();
-}
-
-// cookie
-function f1() {
-	$(".preloader").css('display', 'flex');
-	if ($.cookie('videoEnd') == 1) {
-		$(".preloader").remove();
-	}
-}
-
-// stop video
-function videoCheck() {
-	$("#preloader-video").on("ended", function (){
-		$(".preloader").fadeOut('slow');
-		$('body').css('overflow', 'auto');
-		$.cookie('videoEnd', '1', { expires: 7 });
-	});
-	$('#skip-preloader').click(() => {
-		$(".preloader").fadeOut('slow');
-		$('body').css('overflow', 'auto');
-	});
 }
 
 // Tab-updates
