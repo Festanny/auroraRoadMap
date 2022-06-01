@@ -61,7 +61,7 @@ body {
 	font-weight: normal;
 	color: var(--text);
 	background-color: var(--bg);
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 
 body::-webkit-scrollbar {
@@ -209,7 +209,21 @@ a {
 }
 
 header {
+	position: fixed;
+	top: 0;
 	width: 100%;
+	z-index: 10;
+	padding: 70px 0;
+	transition: all .3s;
+}
+
+header.scrollHeader {
+	padding: 15px 0;
+	background-color: var(--bg);
+}
+
+header.scrollHeader .header nav ul li {
+	font-size: 18px;
 }
 
 header .header nav {
@@ -232,15 +246,12 @@ header .header nav ul {
 header .header nav ul li {
 	list-style: none;
 	font-size: 23px;
+	transition: all .3s;
 }
 
 header .header nav ul li a {
 	padding: 10px;
 	margin: 0 15px;
-}
-
-header .header {
-	padding: 70px 0;
 }
 
 header .header nav .logo {
