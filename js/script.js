@@ -6,7 +6,6 @@ window.onload = function () {
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
 	document.body.style.overflow = 'auto';
-	// mainBlock();
 	percent();
 	imgWomen();
 }
@@ -26,11 +25,6 @@ function percent() {
 	percent = (number_1/number_2) * 100;
 	document.documentElement.style.setProperty("--progress", percent + "%");
 }
-
-// function mainBlock() {
-// 	let heightHeader = $('header').height();
-// 	$('main').css('margin-top', -heightHeader);
-// }
 
 function imgWomen() {
 	let bottomWomen = (($('#token').height() - $('#token .container').height())/2)-50;
