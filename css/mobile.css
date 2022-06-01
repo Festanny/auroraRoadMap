@@ -1,0 +1,666 @@
+@media screen and (max-width: 1399px) {
+	.cards .info-block .block {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	header .header nav .logo {
+		font-size: 135px;
+	}
+	.start .img {
+		width: 550px;
+	}
+	.start .img {
+		width: 50%;
+	}
+	.start .img::before {
+		width: 110%;
+		height: 110%;
+	}
+	.nft-info .container .img::before {
+		width: 140%;
+		height: 140%;
+	}
+	h1 {
+		font-size: 39px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.cards .info-block .block {
+		width: 44%;
+	}
+	.cards .info-block .block::before {
+		left: 20px;
+		transform: none;
+	}
+	footer .footer {
+		width: 100%;
+	}
+	footer .footer .logo-footer {
+		height: 330px;
+	}
+	.cards .info-block .block {
+		min-height: 550px;
+	}
+	.cards .info-block .block {
+		margin: 25px;
+	}
+	.cards .title {
+		margin-bottom: 45px;
+	}
+	.nft-info .container .text-main {
+		padding-left: 50px;
+		margin: 0;
+		width: 50%;
+	}
+	.nft-info .container .img,
+	.allInformation .text-main {
+		width: 50%;
+		margin-right: 0;
+	}
+	.allInformation-block .allInformation .img {
+		width: 50%;
+		height: auto;
+	}
+	.allInformation .text-main {
+		width: 50%;
+	}
+	.nft-info .container .img {
+		max-height: 370px;
+	}
+	.download .block {
+		padding: 70px 130px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	header {
+		font-size: 18px;
+	}
+	header .header nav .logo {
+		font-size: 120px;
+	}
+	h1 {
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	.desc,
+	.nft-info .container .text-main span.desc, .allInformation .text-main span.desc {
+		font-size: 16px;
+	}
+	.start .text-main {
+		padding-right: 30px;
+	}
+	main {
+		margin-top: 0;
+	}
+	.start .img {
+		height: auto;
+		margin-top: 0;
+	}
+	.start .img::before {
+		width: 100%;
+		height: 130%;
+	}
+	.btn,
+	.btn-white {
+		font-size: 18px;
+	}
+	.cards .title h1::before {
+		width: 130px;
+		height: 110px;
+	}
+	.cards .info-block .block {
+		width: 42%;
+	}
+	.cards .info-block .front, .cards .info-block .back {
+		padding: 50px 30px;
+	}
+	.cards .info-block .block .flipper .front .text::before {
+		left: -25px;
+	}
+	.cards .info-block .block {
+		min-height: 470px;
+	}
+	.cards .info-block .block .text .desc-cards {
+		font-size: 20px;
+	}
+	section {
+		padding: 100px 0;
+	}
+	.nft-info .container .img {
+		max-height: 300px;
+	}
+	.allInformation .text-main {
+		padding-right: 30px;
+	}
+	.nft-info .container .text-main {
+		padding-left: 30px;
+	}
+	.allInformation-block {
+		margin-top: 100px;
+	}
+	footer .footer {
+		position: relative;
+		justify-content: flex-end;
+		padding: 50px 0;
+	}
+	footer .footer .logo-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 310px;
+	}
+	.download .block2 {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.download .block {
+		padding: 70px 20px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.download .block .text {
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 910px) {
+	.start .img::before {
+		width: 110%;
+	}
+	.cards .info-block .block .flipper .front .text::before,
+	.cards .info-block .block:nth-of-type(2) .flipper .front .text::before {
+		width: 360px;
+		left: 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	* {
+		cursor: auto;
+	}
+	#aura,
+	#cursor {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+	.cards .info-block .block .flipper .front .text::before,
+	.cards .info-block .block:nth-of-type(2) .flipper .front .text::before {
+		width: 300px;
+		left: 15px;
+		bottom: -105px;
+	}
+	.latest-update .info-block .block-updates div {
+		margin: 10px;
+		width: 130px;
+		height: 130px;
+	}
+	.latest-update .info-block .block-updates div:last-of-type {
+		margin-right: 10px;
+	}
+	header .header nav ul {
+		flex-wrap: wrap;
+	}
+	header .header nav .logo {
+		width: 100%;
+		flex: none;
+		order: 1;
+		font-size: 100px;
+		line-height: normal;
+		margin: 0;
+	}
+	header .header nav ul li a {
+		line-height: normal;
+	}
+	header .header nav ul li {
+		flex: none;
+		order: 2;
+		margin: 10px 15px;
+		line-height: normal;
+	}
+	header .header nav ul {
+		justify-content: center;
+	}
+	header .header nav li a.active::before {
+		bottom: -15px;
+	}
+	h1 {
+		font-size: 34px;
+	}
+	.cards .info-block .block {
+		min-height: 430px;
+	}
+	.cards .info-block .front, .cards .info-block .back {
+		padding: 40px 25px;
+	}
+	.download .block2 {
+		width: 95%;
+	}
+	.nft-info .container .card, .allInformation.container .card2,
+	.download .card3 {
+		transform: none!important;
+	}
+	.download .block2 {
+		transform: none;
+	}
+	.card-wrapper {
+		width: 100%;
+	}
+	.latest-update .info-block .block-updates a {
+		width: 130px;
+		height: 130px;
+		margin: 10px 25px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.cards .info-block .block {
+		margin: 15px;
+	}
+	.nft-info .container .img {
+		max-height: 260px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	.cards .title h1::before {
+		width: 120px;
+	}
+	section {
+		padding: 80px 0;
+	}
+	footer .footer .logo-footer {
+		height: 230px;
+		transform: translateY(50px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 33px;
+	}
+	.cards .info-block .block {
+		margin: 15px 0;
+		width: 45%;
+	}
+	.cards .info-block {
+		justify-content: space-around;
+	}
+	.download-block {
+		padding: 160px 0 200px;
+	}
+	footer .footer .menu .block ul li {
+		margin-bottom: 15px;
+	}
+	.nft-info .container .card,
+	.allInformation-block .allInformation .card2 {
+		flex-wrap: wrap;
+		width: 80%;
+	}
+	.nft-info .container .text-main,
+	.allInformation .text-main {
+		order: 1;
+		width: 100%;
+		margin-bottom: 60px;
+		padding: 0;
+		text-align: left;
+	}
+	.nft-info .container .img,
+	.allInformation-block .allInformation .img {
+		order: 2;
+	}
+	.nft-info .container .img,
+	.allInformation-block .allInformation .img {
+		max-height: none;
+		width: 100%;
+	}
+	.allInformation .text-main {
+		align-items: flex-start;
+	}
+	.nft-info .container .img::before {
+		width: 120%;
+		height: 120%;
+	}
+	footer .footer .menu .block {
+		margin-right: 70px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.start .img {
+		opacity: .3;
+		position: absolute;
+		right: 20px;
+	}
+	.text-main {
+		max-width: none;
+	}
+	.start .text-main {
+		width: 100%;
+		padding-right: 0;
+	}
+	.cards .title {
+		margin-bottom: 35px;
+	}
+	.cards .info-block .block {
+		min-height: 400px;
+	}
+	.latest-update .info-block .info .block {
+		width: 90%;
+	}
+	footer .footer .logo-footer {
+		height: 190px;
+		transform: translateY(40px);
+	}
+	.cards .info-block .block .flipper .front .text::before,
+	.cards .info-block .block:nth-of-type(2) .flipper .front .text::before {
+		width: 250px;
+		left: 5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cards .info-block .block {
+		width: 100%;
+	}
+	.cards .info-block .block::before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	section,
+	.download-block {
+		padding: 60px 0;
+	}
+	.download-block {
+		padding-bottom: 120px;
+	}
+	.allInformation-block {
+		margin-top: 0;
+	}
+	footer .footer .logo-footer {
+		height: 100px;
+	}
+	header .header nav .logo,
+	header .header nav ul li:nth-of-type(1), header .header nav ul li:nth-of-type(5),
+	header .header nav ul li:nth-of-type(2), header .header nav ul li:nth-of-type(4) {
+		animation: none;
+		opacity: 1;
+		font-size: 16px;
+	}
+	.start .img img,
+	.nft-info .container .img img,
+	.allInformation-block .allInformation .img img {
+		animation: none;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	.nft-info .container .text-main, .allInformation .text-main {
+		margin-bottom: 20px;
+	}
+	.download .block2::before,
+	.download .block2::after {
+		display: none;
+	}
+	.download .block2 {
+		width: 100%;
+		transform: none;
+	}
+	.cards .title h1::before {
+		right: 50%;
+		transform: translate(50%, -50%);
+	}
+	.btn {
+		width: 100%;
+		text-align: center;
+		padding: 15px 45px;
+		font-size: 20px;
+	}
+	.latest-update .btn-latest {
+		font-size: 20px;
+		margin-top: 0;
+		padding: 30px 60px;
+	}
+	.latest-update .info-block {
+		margin-top: 50px;
+	}
+	.latest-update .info-block .block-updates div {
+		width: 120px;
+		height: 120px;
+	}
+	.latest-update .info-block .info .block {
+		width: 100%;
+		padding: 30px 60px;
+	}
+	.latest-update .info-block .info {
+		margin-top: 20px;
+	}
+	footer .footer .logo-footer {
+		left: 50%;
+		transform: translate(-50%, 40px);
+		height: 100%;
+		opacity: .07;
+	}
+	footer .footer {
+		justify-content: center;
+	}
+	header .header nav .logo {
+		order: 2;
+		font-size: 250px;
+	}
+	header .header nav ul li {
+		order: 1;
+		margin: 10px;
+	}
+	header .header nav ul {
+		justify-content: space-around;
+		margin-top: 30px;
+	}
+	header .header nav li a.active::before {
+		width: 8px;
+		height: 8px;
+		bottom: -10px;
+	}
+	.start .img {
+		display: none;
+	}
+	.img-a-block {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -15px;
+		width: 100%;
+		opacity: .07;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+	}
+	.img-a-block img {
+		width: 145%;
+	}
+	#start-block {
+		margin-top: -100px;
+	}
+	header .header nav .logo span {
+		background: var(--gr-mob);
+		-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+	}
+	.start .text-main {
+		text-align: center;
+	}
+	.btn,
+	.btn-white {
+		width: auto;
+		padding: 7px 42px;
+		margin-top: 30px;
+	}
+	.btn-white {
+		margin-top: 0;
+	}
+	#cards {
+		display: none;
+	}
+	.img-mob {
+		display: block;
+	}
+	.img-main {
+		display: none;
+	}
+	.container {
+		width: 90%;
+	}
+	.nft-info .container, .allInformation-block .allInformation {
+		width: 90%;
+	}
+	.nft-info .container .img, .allInformation-block .allInformation .img {
+		order: 1;
+		height: auto;
+		margin-bottom: 30px;
+	}
+	.nft-info .container .text-main, .allInformation .text-main {
+		order: 2;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	.nft-info .container .img::before {
+		display: none;
+	}
+	.allInformation-block {
+		background: transparent;
+	}
+	footer .footer .menu {
+		justify-content: space-between;
+		width: 100%;
+	}
+	footer .footer .menu .block {
+		width: 32%;
+	}
+	footer .footer .menu .block:nth-of-type(2) {
+		text-align: right;
+	}
+	footer .footer {
+		padding: 30px 0;
+	}
+	footer ul li {
+		font-size: 14px;
+	}
+	.start::before {
+		display: none;
+	}
+	.nft-info .container .text-main h3, .allInformation .text-main h3 {
+		filter: none;
+	}
+	.preloader {
+		display: none;
+	}
+	.latest-update .info-block .info .block .text {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.latest-update .info-block .block-updates a h4 {
+		font-size: 18px;
+	}
+	.latest-update .info-block .block-updates a {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+	}
+	.latest-update .btn-latest {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 27px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+	.btn {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	h1 {
+		font-size: 23px;
+	}
+	h2,
+	h3 {
+		font-size: 18px;
+	}
+	.desc, .nft-info .container .text-main span.desc, .allInformation .text-main span.desc,
+	.download .block .text span {
+		font-size: 12px;
+	}
+	.btn,
+	.btn-white {
+		font-size: 14px;
+	}
+	header .header nav .logo {
+		font-size: 170px;
+	}
+	.img-a-block img {
+		width: 150%;
+	}
+	.download-block {
+		padding-bottom: 50px;
+	}
+	footer ul li {
+		font-size: 12px;
+	}
+	footer .footer .menu .block {
+		width: 35%;
+	}
+	.download .block {
+		padding: 25px 48px;
+		border-radius: 17px;
+	}
+	header .header nav ul li:nth-of-type(1), header .header nav ul li:nth-of-type(5), header .header nav ul li:nth-of-type(2), header .header nav ul li:nth-of-type(4) {
+		font-size: 14px;
+	}
+	#start-block {
+		margin-top: -80px;
+	}
+	section, .download-block {
+		padding: 50px 0;
+	}
+	.download .block .text span {
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.latest-update .info-block .info .block {
+		padding: 30px;
+	}
+	.container,
+	.nft-info .container, .allInformation-block .allInformation {
+		width: 95%;
+	}
+}
