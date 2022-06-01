@@ -274,6 +274,9 @@ header .header nav .logo {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	animation: opacityStart 1s forwards;
+	animation-delay: .5s;
+	opacity: 0;
 }
 
 #token .info-block {
@@ -440,6 +443,7 @@ header .header nav .logo {
 #aboutUs {
 	padding: 130px 0;
 	background-color: var(--bg2);
+	overflow: hidden;
 }
 
 #aboutUs .info-block {
@@ -472,9 +476,6 @@ header .header nav .logo {
 }
 
 
-
-
-
 /* Keyframes (animation) */
 @keyframes up {
 	0% {
@@ -497,19 +498,6 @@ header .header nav .logo {
 	}
 }
 
-@-webkit-keyframes fadeInUp {
-	from {
-		opacity: 0;
-		-webkit-transform: translate3d(0, 100%, 0);
-		transform: translate3d(0, 100%, 0);
-	}
-	to {
-		opacity: 1;
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-}
-
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -526,16 +514,4 @@ header .header nav .logo {
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
-}
-
-@keyframes PreOpacity {
-	0% {
-		opacity: .5;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: .5;
-	}
 }

@@ -46,7 +46,7 @@ $(window).scroll(function () {
 			$('header').removeClass('scrollHeader');
 		}
 	}
-});s
+});
 if ($(window).width() <= 799) {
 	$('header').addClass('scrollHeader');
 }
