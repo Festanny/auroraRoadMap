@@ -158,7 +158,6 @@ a {
 	0% {
 		transform: scale(0);
 	}
-
 	100% {
 		transform: scale(1);
 	}
@@ -168,7 +167,6 @@ a {
 	0% {
 		transform: scale(1);
 	}
-
 	100% {
 		transform: scale(0);
 	}
@@ -178,7 +176,6 @@ a {
 	0% {
 		transform: translate(0, 0);
 	}
-
 	100% {
 		transform: translate(24px, 0);
 	}
@@ -189,19 +186,16 @@ a {
 	margin-right: auto;
 	margin-left: auto;
 }
-
 @media (min-width: 992px) {
 	.container {
 		max-width: 960px;
 	}
 }
-
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
 	}
 }
-
 @media (min-width: 1400px) {
 	.container {
 		max-width: 1530px;
@@ -261,9 +255,13 @@ header .header nav .logo {
 
 #token {
 	background-image: url('../image/bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	min-height: 990px;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
 
 #token .container {
@@ -271,6 +269,9 @@ header .header nav .logo {
 }
 
 #token .container .women {
+	width: 850px;
+	height: 850px;
+	object-fit: contain;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -283,6 +284,8 @@ header .header nav .logo {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
+	position: relative;
+	z-index: 5;
 }
 
 #token .info-block .text-main {
@@ -373,6 +376,7 @@ header .header nav .logo {
 
 #roadMap .info-block .block .roadMapText {
 	min-width: 620px;
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -455,10 +459,11 @@ header .header nav .logo {
 	margin: 0 auto;
 }
 
-#aboutUs .info-block img {
+#aboutUs .info-block .women2 {
 	width: 484px;
 	height: 484px;
 	object-fit: contain;
+	margin-left: -50px;
 }
 
 #aboutUs .info-block .block {
