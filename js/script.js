@@ -6,16 +6,9 @@ window.onload = function () {
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
 	document.body.style.overflow = 'auto';
+
+	let number_1 = $('#token .info-block .text-main .progress .line .numbers span:nth-of-type(1)').text().replace(/\./g,''),
+		number_2 = $('#token .info-block .text-main .progress .line .numbers span:nth-of-type(2)').text().replace(/\./g,''),
+		percent = (number_1/number_2) * 100;
+	document.documentElement.style.setProperty("--test", percent + "%");
 }
-
-// Tab-updates
-$('.latest-update .info-block .block-updates a').click(function () {
-	var id = $(this).attr('data-tab-updates'),
-		content = $('.latest-update .info-block .info .block[data-tab-updates="' + id + '"]');
-
-	$('.latest-update .info-block .block-updates a.active').removeClass('active');
-	$(this).addClass('active');
-
-	$('.latest-update .info-block .info .block.active').removeClass('active');
-	content.addClass('active');
-});
