@@ -42,7 +42,8 @@
 }
 
 :root {
-	--bg: #040517;
+	--bg: #040C20;
+	--bg2: #060D20;
 	--text: #ffffff;
 	--progress: 100%;
 	--line: #101B38;
@@ -248,7 +249,7 @@ header .header nav .logo {
 }
 
 #token {
-	background-image: url('../image/bg.png');
+	background-image: url('../image/bg.webp');
 	min-height: 990px;
 	display: flex;
 	align-items: center;
@@ -364,7 +365,7 @@ header .header nav .logo {
 }
 
 #roadMap .info-block .block:first-of-type .roadMapText {
-	width: 80%;
+	width: 65%;
 	margin: 0 auto;
 }
 
@@ -390,11 +391,16 @@ header .header nav .logo {
 	transform: translateX(-50%);
 }
 
+#roadMap .info-block .block:first-of-type .roadMapText .text::before {
+	background: linear-gradient(90deg, #097DFC 0%, #8F17CB 102.56%);
+}
+
 #roadMap .info-block .block .roadMapText .text span {
 	display: block;
 	width: 246px;
 	margin: 0 55px;
 	position: relative;
+	font-weight: 300;
 }
 
 #roadMap .info-block .block .roadMapText .text span:first-of-type {
@@ -414,6 +420,44 @@ header .header nav .logo {
 	transform: translateX(-50%);
 	border-radius: 50%;
 	background-color: var(--line);
+}
+
+#roadMap .info-block .block:first-of-type .roadMapText .text span::before {
+	background: linear-gradient(90deg, #881CCD 0%, #0D79FA 100%);
+}
+
+#aboutUs {
+	padding: 130px 0;
+	background-color: var(--bg2);
+}
+
+#aboutUs .info-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 65%;
+	margin: 0 auto;
+}
+
+#aboutUs .info-block img {
+	width: 484px;
+	height: 484px;
+	object-fit: contain;
+}
+
+#aboutUs .info-block .block {
+	flex: 1;
+}
+
+#aboutUs .info-block .block h2 {
+	margin-bottom: 16px;
+	font-weight: 800;
+}
+
+#aboutUs .info-block .block .text {
+	font-size: 20px;
+	font-weight: 300;
 }
 
 
