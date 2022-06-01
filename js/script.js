@@ -1,48 +1,44 @@
 // preloader
 window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-    }, 500);
-    document.body.style.overflow = 'auto';
+	document.body.classList.add('loaded_hiding');
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	}, 500);
+	document.body.style.overflow = 'auto';
+	videoCheck();
+	f1();
+}
 
-    // animation block
-    function onEntry(entry) {
-        entry.forEach(change => {
-            if (change.isIntersecting) {
-                change.target.classList.add('el-show');
-            }
-        });
-    }
-    let options = {
-        threshold: [0.3]
-    };
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll('.el');
+// cookie
+function f1() {
+	$(".preloader").css('display', 'flex');
+	if ($.cookie('videoEnd') == 1) {
+		$(".preloader").remove();
+	}
+}
 
-    for (let elm of elements) {
-        observer.observe(elm);
-    }
-    
-    let placeholderBlock = document.querySelectorAll('.portfolio .info-block .block .img');
-    
-    placeholderBlock.forEach(el => {
-       el.style.display = 'block';
-    });
-};
+// stop video
+function videoCheck() {
+	$("#preloader-video").on("ended", function (){
+		$(".preloader").fadeOut('slow');
+		$('body').css('overflow', 'auto');
+		$.cookie('videoEnd', '1', { expires: 7 });
+	});
+	$('#skip-preloader').click(() => {
+		$(".preloader").fadeOut('slow');
+		$('body').css('overflow', 'auto');
+	});
+}
 
-$('.portfolio-menu button.btn').on('click', function () {
-    $('.portfolio-menu button.btn').removeClass('active');
-    $(this).addClass('active');
+// Tab-updates
+$('.latest-update .info-block .block-updates a').click(function () {
+	var id = $(this).attr('data-tab-updates'),
+		content = $('.latest-update .info-block .info .block[data-tab-updates="' + id + '"]');
 
-    var id = $(this).attr('data-filter'),
-        content = $('.vm-portfolio .vm-portfolio-area .vm-portfolio-item[data-filter="' + id + '"]');
+	$('.latest-update .info-block .block-updates a.active').removeClass('active');
+	$(this).addClass('active');
 
-    if (id == '*') {
-        $('.vm-portfolio .vm-portfolio-area .vm-portfolio-item').addClass('active');
-    } else {
-        $('.vm-portfolio .vm-portfolio-area .vm-portfolio-item.active').removeClass('active');
-        content.addClass('active');
-    }
+	$('.latest-update .info-block .info .block.active').removeClass('active');
+	content.addClass('active');
 });
