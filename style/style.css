@@ -5,7 +5,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/Muller/MullerLight.ttf') format('truetype');
@@ -13,7 +12,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/Muller/MullerRegular.ttf') format('truetype');
@@ -21,7 +19,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/Muller/MullerMedium.ttf') format('truetype');
@@ -29,7 +26,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/Muller/MullerBlack.ttf') format('truetype');
@@ -37,7 +33,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/Muller/MullerExtraBold.ttf') format('truetype');
@@ -48,21 +43,9 @@
 
 :root {
 	--bg: #040517;
-	--bg2: rgba(40, 41, 54, 0.18);
-	--bg3: #0a0b1d;
-	--preloader: #000000;
 	--text: #ffffff;
-	--text2: #1050bc;
-	--text-op: rgba(255, 255, 255, 0.45);
-	--gr: linear-gradient(130deg, #04a2fe 25%, #1436a6 75%);
-	--gr2: linear-gradient(5deg, #04a2fe 25%, #1436a6 75%);
-	--gr-mob: linear-gradient(90deg, #00A3FF 17.86%, #0029FF 95.71%);
-	--dr-shadow: drop-shadow(0 0 150px rgb(0, 114, 255));
-	--dr-shadow2: drop-shadow(0 0 150px rgb(0, 114, 255, 0.5));
-	--dr-shadow-white: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
-	--dr-shadow-btn: drop-shadow(0 0 10px rgb(0, 114, 255, 0.5));
-	--dr-shadow-logo: drop-shadow(0 0 30px rgb(0, 114, 255));
-	--test: 100%;
+	--progress: 100%;
+	--line: #101B38;
 }
 
 * {
@@ -98,16 +81,16 @@ body.start-page {
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
-	font-weight: 800;
+	font-weight: 500;
 }
 
-h1 {font-size: 50px; text-transform: uppercase;}
+h1 {font-size: 50px; text-transform: uppercase; font-weight: 800;}
 h2 {font-size: 40px;}
-h3 {font-size: 35px;}
+h3 {font-size: 35px; }
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: var(--text);
 }
 
 .loaded_hiding .preloader-start {
@@ -232,6 +215,8 @@ header .header nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 
 header .header nav ul {
@@ -240,6 +225,7 @@ header .header nav ul {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	margin-right: -15px;
 }
 
 header .header nav ul li {
@@ -262,16 +248,31 @@ header .header nav .logo {
 }
 
 #token {
-	background-image: url('../')
+	background-image: url('../image/bg.png');
+	min-height: 990px;
+	display: flex;
+	align-items: center;
+}
+
+#token .container {
+	position: relative;
+}
+
+#token .container .women {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 #token .info-block {
 	display: flex;
 	justify-content: space-between;
+	height: 100%;
 }
 
 #token .info-block .text-main {
 	width: 50%;
+	position: relative;
 }
 
 #token .info-block .text-main h1 {
@@ -320,7 +321,7 @@ header .header nav .logo {
     content: '';
 	left: 0;
     height: 100%;
-    width: var(--test);
+    width: var(--progress);
     background: linear-gradient(90deg, #0085FF 0%, #6A33DF 48.96%, #9117CB 100%);
 }
 
@@ -328,6 +329,92 @@ header .header nav .logo {
 	text-align: center;
 }
 
+#roadMap {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.textGr {
+	font-size: 22px;
+	background: linear-gradient(90deg, #0F79FA 0%, #8E18CC 112.75%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	display: inline-block;
+}
+
+#roadMap .textGr {
+	margin-bottom: 21px;
+}
+
+#roadMap .info-block .block {
+	margin-bottom: 110px;
+}
+
+#roadMap .info-block .block h3 {
+	margin-bottom: 110px;
+}
+
+#roadMap .info-block .block .roadMapText {
+	min-width: 620px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#roadMap .info-block .block:first-of-type .roadMapText {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#roadMap .info-block .block:first-of-type .roadMapText .text {
+	width: 100%;
+    justify-content: space-between;
+}
+
+#roadMap .info-block .block .roadMapText .text {
+	display: flex;
+	padding-top: 26px;
+	position: relative;
+}
+
+#roadMap .info-block .block .roadMapText .text::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 3px;
+	width: calc(100% - 230px);
+	background-color: var(--line);
+	transform: translateX(-50%);
+}
+
+#roadMap .info-block .block .roadMapText .text span {
+	display: block;
+	width: 246px;
+	margin: 0 55px;
+	position: relative;
+}
+
+#roadMap .info-block .block .roadMapText .text span:first-of-type {
+	margin-left: 0;
+}
+#roadMap .info-block .block .roadMapText .text span:last-of-type {
+	margin-right: 0;
+}
+
+#roadMap .info-block .block .roadMapText .text span::before {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: var(--line);
+}
 
 
 
