@@ -47,6 +47,9 @@
 	#roadMap .info-block .block .roadMapText .text span:last-of-type {
 		margin-bottom: 0;
 	}
+	#roadMap .info-block .block .roadMapText {
+		min-width: auto;
+	}
 	#roadMap .info-block .block h3 {
 		margin-bottom: 70px;
 	}
@@ -157,34 +160,145 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
+	header.scrollHeader .header nav ul li {
+		font-size: 16px;
+	}
+	header .header nav .logo {
+		font-size: 30px;
+	}
+	#roadMap .info-block .block:last-of-type {
+		margin-bottom: 55px;
+	}
+	#roadMap .container {
+		width: 90%;
+	}
+	#aboutUs .info-block .women2 {
+		width: 330px;
+		height: 330px;
+	}
 }
 
-@media screen and (max-width: 680px) {
-	
+@media screen and (max-width: 700px) {
+	#token .container .women {
+		width: 450px;
+		right: -15%;
+		transform: translateY(30px);
+	}
+	#token .info-block .text-main .progress .line .numbers {
+		font-size: 14px;
+	}
+	#token .info-block .text-main h1 {
+		margin-bottom: 30px;
+	}
 }
 
-@media screen and (max-width: 600px) {
-	
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 30px;
+	}
+	#token .container .women {
+		width: 380px;
+		height: 380px;
+	}
 }
 
 @media screen and (max-width: 568px) {
-	
+	h1 {
+		font-size: 28px;
+	}
+	h2, h3 {
+		font-size: 26px;
+	}
+	#token .info-block .text-main {
+		width: 100%;
+	}
+	#token {
+		min-height: 540px;
+	}
+	#token .container .women {
+		transform: translateY(20px);
+	}
+	#aboutUs .info-block .women2 {
+		width: 50%;
+		height: auto;
+		margin-left: -30px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-	
+	#token .container .women {
+		display: none;
+	}
+	#token {
+		min-height: 500px;
+	}
+	#roadMap .info-block .block h3 {
+		margin-bottom: 50px;
+	}
+	header.scrollHeader .header nav ul li {
+		font-size: 14px;
+	}
+	header.scrollHeader .header nav ul li a {
+		padding: 0;
+	}
+	header .header nav .logo {
+		font-size: 25px;
+	}
+	#aboutUs {
+		padding: 55px 0;
+	}
+	#aboutUs .info-block .block .text,
+	#roadMap .info-block .block .roadMapText .text span {
+		font-size: 15px;
+	}
+	#roadMap .info-block .block .roadMapText .text span {
+		margin: 20px 0;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	
+	#roadMap {
+		padding: 50px 0;
+	}
+	h2, h3 {
+		font-size: 24px;
+	}
+	#aboutUs .info-block .women2 {
+		margin-left: -25px;
+	}
 }
 
 @media screen and (max-width: 370px) {
-	
-}
-
-@media screen and (max-width: 360px) {
-	
+	#token {
+		min-height: 450px;
+	}
+	h1 {
+		font-size: 26px;
+	}
+	#roadMap .info-block .block {
+		margin-bottom: 100px;
+	}
+	#aboutUs .info-block .women2 {
+		width: 70%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	#aboutUs .info-block .block {
+		width: 100%;
+		flex: none;
+	}
+	#roadMap .info-block .block:last-of-type {
+		margin-bottom: 20px;
+	}
+	header .header nav ul li a {
+		margin: 0 10px;
+	}
+	header .header nav ul li a:last-of-type {
+		margin-right: 0;
+	}
+	header .header nav ul {
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width: 320px) {
