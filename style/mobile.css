@@ -73,6 +73,12 @@
 	#token {
 		min-height: 860px;
 	}
+	#token::before {
+		height: 130px;
+	}
+	#token::before {
+		height: 110px;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -88,7 +94,7 @@
 @media screen and (max-width: 910px) {
 	#token .container .women {
 		height: 580px;
-		transform: translateY(-40px);
+		transform: translateY(30px);
 		right: -29%;
 	}
 	#token {
@@ -99,6 +105,9 @@
 	}
 	#aboutUs {
 		padding: 100px 0;
+	}
+	#token::before {
+		height: 100px;
 	}
 }
 
@@ -190,6 +199,9 @@
 	#token .info-block .text-main h1 {
 		margin-bottom: 30px;
 	}
+	#token::before {
+		height: 80px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -199,6 +211,9 @@
 	#token .container .women {
 		width: 380px;
 		height: 380px;
+	}
+	#token::before {
+		height: 100px;
 	}
 }
 
@@ -222,6 +237,9 @@
 		width: 50%;
 		height: auto;
 		margin-left: -30px;
+	}
+	#token::before {
+		height: 60px;
 	}
 }
 
@@ -253,6 +271,9 @@
 	}
 	#roadMap .info-block .block .roadMapText .text span {
 		margin: 20px 0;
+	}
+	#token::before {
+		height: 100px;
 	}
 }
 
@@ -299,8 +320,7 @@
 	header .header nav ul {
 		margin-right: 0;
 	}
-}
-
-@media screen and (max-width: 320px) {
-	
+	#token::before {
+		height: 50px;
+	}
 }
